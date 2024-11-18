@@ -1,22 +1,46 @@
 /* #region root */
+/* work-sans-regular - latin */
 @font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Work Sans';
     font-style: normal;
-    font-weight: 1 999;
-    /* Variable font weight range */
-    font-display: swap;
-    /* Improves loading performance */
-    src: url('/assets/fonts/WorkSans-VariableFont_wght.woff2') format('woff2'),
+    font-weight: 400;
+    src: url('/assets/fonts/work-sans-v19-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
+/* work-sans-italic - latin */
 @font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Work Sans';
     font-style: italic;
-    font-weight: 1 999;
-    /* Variable font weight range */
+    font-weight: 400;
+    src: url('/assets/fonts/work-sans-v19-latin-italic.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* work-sans-700 - latin */
+@font-face {
     font-display: swap;
-    /* Improves loading performance */
-    src: url('/assets/fonts/WorkSans-Italic-VariableFont_wght.woff2') format('woff2'),
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('/assets/fonts/work-sans-v19-latin-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* work-sans-700italic - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Work Sans';
+    font-style: italic;
+    font-weight: 700;
+    src: url('/assets/fonts/work-sans-v19-latin-700italic.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 :root {
@@ -41,6 +65,8 @@
     --clr-link: hsl(220, 100%, 41%);
 
     --border: 1px solid var(--clr-black);
+    --fw-700: 700;
+    --fw-400: 400;
 }
 
 /* #endregion */
@@ -71,7 +97,7 @@ nav ul {
 }
 
 strong {
-    font-weight: 700;
+    font-weight: var(--fw-700);
 }
 
 em {
@@ -119,7 +145,7 @@ h2,
 h3,
 h4 {
     text-wrap: balance;
-    font-weight: 700;
+    font-weight: var(--fw-700);
 }
 
 /* Give orphans a friend */
@@ -163,12 +189,13 @@ a:visited {
 }
 
 body {
-    font-family: "work sans", system-ui, sans-serif;
+    font-family: "work sans", verdana, sans-serif;
     font-size: var(--fs-p);
     color: var(--clr-black);
     margin-block: var(--s-base);
     margin-inline: auto;
     width: min(75rem, 100% - var(--s-base) * 2);
+    font-weight: var(--fw-400);
     /* Make the container 1280px wide or at small screens 100% wide with some margins */
 }
 
@@ -184,7 +211,7 @@ body {
     text-decoration: none;
     display: inline-block;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: var(--fw-700);
     letter-spacing: .05em;
 }
 
@@ -242,7 +269,7 @@ details+details {
 
 /* Provide some distinction between summary and contents */
 details summary {
-    font-weight: 700;
+    font-weight: var(--fw-700);
 }
 
 /* Give some space between summary elements */
@@ -264,7 +291,7 @@ dl {
 
 /* Make DT stand out */
 dt {
-    font-weight: 700;
+    font-weight: var(--fw-700);
 }
 
 /* Remove default spacing and start in second column */
@@ -535,7 +562,7 @@ label {
 
 /* SLUB = smaller, lighter, uppercase, bold */
 .slub {
-    font-weight: 700;
+    font-weight: var(--fw-700);
     color: var(--clr-gray);
     text-transform: uppercase;
 }
@@ -597,7 +624,7 @@ textarea {
 
 /* Make headers bold */
 th {
-    font-weight: 700;
+    font-weight: var(--fw-700);
 }
 
 /* Set width of header column */
