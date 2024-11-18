@@ -8,7 +8,7 @@ metaDesc: I combined the best aspects of my first two personal gravel bikes to m
 
 Over the years I've made two gravel bikes for myself. 
 
-[The first gravel bike](blog/sierra-gravel-explorer) used 650b wheels, a dropper post, and a long front center. I liked it but I wished it had clearance for tires wider than 42mm. Around Reno the dirt roads can get pretty rough. Using wide tires and low air pressures really smoothes out the ride.
+[The first gravel bike](/blog/sierra-gravel-explorer) used 650b wheels, a dropper post, and a long front center. I liked it but I wished it had clearance for tires wider than 42mm. Around Reno the dirt roads can get pretty rough. Using wide tires and low air pressures really smoothes out the ride.
 
 My second gravel bike was designed more for racing bikepacking events. It used a mountain bike drivetrain and 700x55 tires. But this time I left out clearance for a dropper post to keep the front triangle as large as possible for a high volume frame bag. I used it during the Smoke N' Fire 400 and some short bikepacking trips close to home.
 
