@@ -1,0 +1,14 @@
+---
+layout: layouts/base.njk
+permalink: /blog/
+title: Dive into the blog
+metaDesc: The Manzanita blog includes articles about bike components, frame geometry, bikepacking and touring trips, and other topics on bike culture and custom bike frames.
+type: website
+---
+<h1>{{ title }}</h1>
+<div class="mt-xl stack-xl">
+  {% set latest_posts = collections.blog | reverse %}
+  {% for post in latest_posts %}
+    {% include "partials/_blogCard.html" %}
+  {% endfor %}
+</div>

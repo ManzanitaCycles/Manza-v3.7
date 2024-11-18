@@ -1,0 +1,33 @@
+<div class="mt-xl prose stack">
+    <h3>Check out these other posts</h3>
+    <div class="grid-300">
+        {% set previousPost = collections.blog | getPreviousCollectionItem %}
+
+        {% if not previousPost %}
+        {% set previousPost = collections.blog[collections.blog | length - 1] %} <!-- Loop back to the last post -->
+        {% endif %}
+
+        {% if previousPost %}
+        <figure>
+            <a href="{{ previousPost.url }}" aria-label="Read previous post: {{ previousPost.data.title }}">
+                <img data-blink-uuid="{{ previousPost.data.featuredImage }}" alt="{{ previousPost.data.alt }}" width="900" height="600">
+                <figcaption>{{ previousPost.data.title }}</figcaption>
+            </a>
+        </figure>
+        {% endif %}
+        {% set nextPost = collections.blog | getNextCollectionItem %}
+
+        {% if not nextPost %}
+        {% set nextPost = collections.blog[0] %} <!-- Loop back to the first post -->
+        {% endif %}
+
+        {% if nextPost %}
+        <figure>
+            <a href="{{ nextPost.url }}" aria-label="Read next post: {{ nextPost.data.title }}">
+                <img data-blink-uuid="{{ nextPost.data.featuredImage }}" alt="{{ nextPost.data.alt }}" width="900" height="600">
+                <figcaption>{{ nextPost.data.title }}</figcaption>
+            </a>
+        </figure>
+        {% endif %}
+    </div>
+</div>

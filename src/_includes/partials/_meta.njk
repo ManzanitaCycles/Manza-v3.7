@@ -1,0 +1,20 @@
+{% set pageTitle = metaTitle or title %}
+{% set siteTitle = site.name %}
+{% set currentUrl = site.url + page.url %}
+{% set metaDesc = metaDesc or summary or site.description %}
+
+{# Avoid duplicating site name on the homepage title #}
+{% if pageTitle != siteTitle %}
+  <title>{{ pageTitle }} | {{ siteTitle }}</title>
+{% else %}
+  <title>{{ pageTitle }}</title>
+{% endif %}
+
+<link rel="canonical" href="{{ currentUrl }}" />
+
+{% if metaDesc %}
+  <meta name="description" content="{{ metaDesc }}" />
+{% endif %}
+
+{# Set robots meta based on the front matter setting #}
+<meta name="robots" content="{{ robots or 'all' }}" />

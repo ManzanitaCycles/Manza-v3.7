@@ -1,0 +1,239 @@
+---
+title: Manifesto
+featuredImage: 5b17171a-f99f-406c-8d8f-3546541d52c0
+alt: Manifesto 120mm steel hardtail
+metaDesc: A hardtail that ticks all the boxes.
+buildType: Stock
+---
+<!-- Hero -->
+<section>
+    <div>
+        <h1 class="fs-huge">{{ manifesto.name }}</h1>
+    </div>
+    <img class="mt-xl" data-blink-uuid="{{ manifesto.heroImg }}" alt="{{ manifesto.heroImgAlt }}" width="1200" height="800">
+</section>
+<!-- Slogan -->
+<section class="mt-xl">
+    <h2 class="h1 center">{{ manifesto.slogan }}</h2>
+    <div class="prose prose-center mt-base">
+        This is the 130mm-travel, 29er hardtail made for <strong>maximum fun on the trail</strong>. The geometry is just the right amount of progressive, giving you confidence on the steeps while still feeling agile when it's play time. And maintenance is a breeze thanks to the externally-routed lines secured with custom 3d-printed guides that provide protection where needed and a rattle-free ride.
+    </div>
+</section>
+<!-- Shopping -->
+<section class="mt-xl">
+    <div class="price-card-switcher">
+        <div class="price-card price-card-stack">
+            <h3>Frame</h3>
+            <p class="h2"><strong>{{ manifesto.basePrice }}</strong></p>
+            <ul class="fs-small">
+                <li>Manifesto frame</li>
+                <li>Cane Creek 40 headset</li>
+            </ul>
+            <p class="mt-lg"><a class="button button-primary" href="{{ manifesto.baseDeposit }}">Place deposit</a></p>
+        </div>
+        <div class="price-card price-card-stack">
+            <h3>XT build</h3>
+            <p class="h2"><strong>{{ manifesto.buildPrice }}</strong></p>
+            <ul class="fs-small">
+                <li>Manifesto frame</li>
+                <li>Cane Creek 40 headset</li>
+                <li>XT build kit</li>
+            </ul>
+            <p class="mt-lg"><a class="button button-primary" href="{{ manifesto.buildDeposit }}">Place deposit</a></p>
+        </div>
+        <div class="price-card price-card-stack">
+            <h3>Custom build</h3>
+            <strong class="h2">$TBD</strong>
+            <ul class="fs-small">
+                <li>Manifesto frame</li>
+                <li>Headset of your choice</li>
+                <li>Custom build kit</li>
+            </ul>
+            <p class="mt-lg"><a class="button button-primary" href="{{ manifesto.buildDeposit }}">Place deposit</a></p>
+        </div>
+    </div>
+    <details class="mt-xl border-block details-solo">
+        <summary>Show me the XT build kit</summary>
+        {% include "partials/_xtBuild.html" %}
+    </details>
+</section>
+<!-- UDH dropouts -->
+<section class="mt-xl sidebar sidebar-left divider">
+    {% img "bf001560-76aa-4636-8c5d-9aed1b0628bb", "UDH dropouts" %}
+    <div>
+        <h2>UDH dropouts for the win</h2>
+        <p class="mt-base">
+            These dropouts are compatible with Sram's Universal Derailleur Hanger, the new Transmission, and every other drivetrain on the market.
+        </p>
+    </div>
+</section>
+<!-- Futureproof dropouts-->
+<section class="mt-xl sidebar">
+    {% img "e376368b-ae32-49a2-8032-316c41b9f9d9", "Water bottle mounting point on the seat tube" %}
+    <div>
+        <h2>More water for more miles</h2>
+        <p class="mt-base">
+            The offset bosses on the seat tube allow you to install a water bottle cage without interfering with your long dropper post.
+        </p>
+    </div>
+</section>
+
+<!-- Easy to love-->
+<section class="mt-xl sidebar sidebar-left">
+    {% img "6038ed73-bfd8-4acb-9f23-e6ee4c8118f0", "3d-printed frame protector and housing guide" %}
+    <div>
+        <h2>Serve and protect</h2>
+        <p class="mt-base">
+            The externally-routed lines make maintenance a breeze. A custom 3d-printed housing guide protects the frame and lines from damage.
+        </p>
+    </div>
+</section>
+<!-- Geometry section-->
+<section class="mt-xl divider">
+    <h2 class="h1">Geometry</h2>
+    {% include "partials/_manifestoGeo.html" %}
+    <p class="mt-base"><small>
+            Geometry displayed with no fork sag<br />
+            *Angle determined at average saddle height<br />
+            **Center to top<br />
+            ***Measured with 61mm (2.4") tire
+        </small></p>
+</section>
+<!-- FAQ -->
+<section class="divider mt-xl">
+    <h2 class="h1">FAQ</h2>
+    <div class="mt-base prose border-block details">
+        <details name="faq">
+            <summary>What are the frame specs?</summary>
+            <div>
+                <dl>
+                    <dt>Max tire</dt>
+                    <dd>29x2.6</dd>
+                    <dt>Rear hub</dt>
+                    <dd>12x148 Boost</dd>
+                    <dt>Derailleur hanger</dt>
+                    <dd>UDH / Sram Transmission</dd>
+                    <dt>Chainline</dt>
+                    <dd>52 to 55</dd>
+                    <dt>Max chainring</dt>
+                    <dd>34</dd>
+                    <dt>Brake type</dt>
+                    <dd>ISO 140</dd>
+                    <dt>Max rear rotor</dt>
+                    <dd>180</dd>
+                    <dt>Seat post diameter</dt>
+                    <dd>31.6</dd>
+                    <dt>Seat post clamp diameter</dt>
+                    <dd>34.9 or 35</dd>
+                    <dt>Bottom bracket</dt>
+                    <dd>73 BSA</dd>
+                </dl>
+            </div>
+        </details>
+        <details name="faq">
+            <summary>What's included with the frame?</summary>
+            <div>
+                <ul>
+                    <li>Rear bolt-on axle</li>
+                    <li>Sram Universal Derailleur Hanger</li>
+                    <li>Wolftooth seat collar</li>
+                    <li>Cane Creek 40 headset</li>
+                    <li>Chainstay protection</li>
+                    <li>3d-printed friction housing guides</li>
+                    <li>3d-printed down tube protector</li>
+                </ul>
+            </div>
+        </details>
+        <details name="faq">
+            <summary>How fast can I get my hands on a Manifesto?</summary>
+            <div>
+                <p>My goal is to get you a frameset within 12 weeks of your deposit. Full builds may take longer depending on parts availability.</p>
+            </div>
+        </details>
+        <details name="faq">
+            <summary>What are my color options?</summary>
+            <div>
+                <ol>
+                    <li>White frame with black decals</li>
+                    <li>Manzanita red frame with light green decals</li>
+                </ol>
+            </div>
+        </details>
+        <details name="faq">
+            <summary>Can I get the frame custom painted?</summary>
+            <div>
+                <p>
+                    Yes you can. <a href="/contact">Contact me</a> for pricing and
+                    turnaround time.
+                </p>
+            </div>
+        </details>
+        <details name="faq">
+            <summary>What is the return policy?</summary>
+            <div>
+                <p>
+                    All manifesto frames are made to order, one-at-a-time in my workshop. Frames and complete bike orders are final. I do not offer refunds or returns.
+                </p>
+            </div>
+        </details>
+        <details name="faq">
+            <summary>What is the warranty?</summary>
+            <div>
+                <p>I use only the best tubing and raw materials for making your frame, and I stand by my work. If you are the original owner, Manzanita Cycles offers a lifetime warranty on all Manzanita-made products that fail due to a materials or manufacturing defect.</p>
+                <p>If you crash, abuse, modify, or damage your Manzanita product, or if you install parts incorrectly, use incompatible parts, or fail to do proper maintenance on your bike, then it will no longer be covered by the warranty. Any paint and graphics are also not covered.</p>
+                <p>If you have a problem with a component not made by Manzanita Cycles, it's best to contact the component manufacturer for support. However, if you're having trouble getting traction, let me know and I'll try to help out.</p>
+            </div>
+        </details>
+        <details name="faq">
+            <summary>What brake adapter do I need?</summary>
+            <div>
+                <p>
+                    Make sure you choose a <strong>rear</strong>, <strong>IS to post mount</strong> adapter for the rotor size you plan to run.
+                </p>
+            </div>
+        </details>
+        <details name="faq">
+            <summary>Can I run a front derailleur?</summary>
+            <div>
+                <p>
+                    No, the bike frame is optimized for 1x drivetrains.
+                </p>
+            </div>
+        </details>
+        <details name="faq">
+            <summary>Can I run 650b wheels?</summary>
+            <div>
+                <p>
+                    The frame is designed around the height of a 29er wheel with 2.4" tires. Running 650b wheels will make your bike too low to the ground, resulting in frequent pedal strikes.
+                </p>
+            </div>
+        </details>
+        <details name="faq">
+            <summary>Can I over/under fork the frame?</summary>
+            <div>
+                <p>
+                    The bike is designed for 130mm travel forks. Running a longer fork will void the warranty. But you can run a 120mm fork no problem. It'll make the head tube and seat tube angles about a half degree steeper.
+                </p>
+            </div>
+        </details>
+        <details>
+            <summary>Is shipping included in the price?</summary>
+            <div>
+                <p>I typically use UPS to ship your bike with insurance to cover its replacement in case of theft or damage.
+                    Shipping to a US destination starts at <strong>{{ pricing.optionShippingBase }}</strong> for a frame.
+                    Framesets or complete bikes will be more.</p>
+                <p>I'm also happy to ship to international destinations. But please note that shipping fees, import fees, and import taxes can get very expensive.</p>
+                <p>You can also pick up the bike from Manzanita Cycles World Headquarters if you live near Reno.</p>
+            </div>
+        </details>
+    </div>
+</section>
+<section class="mt-xl">
+    <figure class="sidebar">
+        <img data-blink-uuid="9f53c3dd-1d50-4e9e-b42f-333339fb69be" alt="Carlos riding his hardtail in the Alps." width="800" height="800">
+        <figcaption class="mt-base">
+            <p><strong>The final feeling when you get to ride the bike is pure satisfaction...</strong></p>
+            <p><small>&mdash;Carlos B.</small></p>
+        </figcaption>
+    </figure>
+</section>

@@ -1,0 +1,21 @@
+{
+  "name": "manza-tw",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:js": "node build.js",
+    "clean": "rm -rf public",
+    "build": "npm run build:js && eleventy",
+    "start": "eleventy --serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "clean-css": "^5.3.3",
+    "esbuild": "^0.24.0",
+    "html-minifier": "^4.0.0"
+  }
+}

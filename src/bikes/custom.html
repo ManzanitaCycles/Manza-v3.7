@@ -1,0 +1,209 @@
+---
+title: Custom
+featuredImage: 834607af-8d76-4e45-900e-ba7164aef297
+alt: Custom Manzanita 29er klunker
+metaDesc: A unique bike with all the personal touches.
+buildType: Stock
+---
+<!-- Hero -->
+<section>
+    <div>
+        <h1 class="fs-huge">{{ custom.name }}</h1>
+    </div>
+    <img class="mt-xl" data-blink-uuid="{{ custom.heroImg }}" alt="{{ custom.heroImgAlt }}" width="1200" height="800">
+</section>
+<!-- Slogan -->
+<section class="mt-xl">
+    <h2 class="h1 center">{{ custom.slogan }}</h2>
+    <div class="prose prose-center mt-base">
+        This is your chance to get a bike that's perfectly tailored to you. Do you have uncommon fit needs or an idea for a bike that's not commercially available, or both? Let's make your dream bike happen!
+    </div>
+</section>
+<!-- Shopping -->
+<section class="mt-xl">
+    <div class="price-card-switcher">
+        <div class="price-card price-card-stack">
+            <h3>Frame</h3>
+            <p><small>Starting at</small><br />
+                <strong class="h2">{{ custom.basePrice }}</strong>
+            </p>
+            <ul class="fs-small">
+                <li>Custom frame</li>
+                <li>Headset of your choice</li>
+            </ul>
+            <p class="mt-lg"><a class="button button-primary" href="{{ custom.baseDeposit }}">Place deposit</a></p>
+        </div>
+        <div class="price-card price-card-stack">
+            <h3>Frame and fork</h3>
+            <p><small>Starting at</small><br />
+                <strong class="h2">$3,000</strong>
+            </p>
+            <ul class="fs-small">
+                <li>Custom frame</li>
+                <li>Custom fork</li>
+                <li>Headset of your choice</li>
+            </ul>
+            <p class="mt-lg"><a class="button button-primary" href="{{ custom.framesetDeposit }}">Place deposit</a></p>
+        </div>
+        <div class="price-card price-card-stack">
+            <h3>Custom build</h3>
+            <p class="h2">
+                <strong>$TBD</strong>
+            </p>
+            <ul class="fs-small">
+                <li>Custom frame</li>
+                <li>Custom fork</li>
+                <li>Headset of your choice</li>
+                <li>Custom build kit</li>
+            </ul>
+            <p class="mt-lg"><a class="button button-primary" href="{{ custom.buildDeposit }}">Place deposit</a></p>
+        </div>
+    </div>
+</section>
+<!-- Touring bike -->
+<section class="mt-xl sidebar sidebar-left divider">
+    {% img "a2e7a741-dee1-403a-928f-8cce18cba672", "A custom bikepacking bike" %}
+    <div>
+        <h2>For the long haul</h2>
+        <p class="mt-base">
+            Are you planning for a long tour and looking for a reliable companion? Let's get your steel mule dialed before the trip.
+        </p>
+    </div>
+</section>
+<!-- Commuting bike -->
+<section class="mt-xl sidebar">
+    {% img "4a6e97fd-7b29-492c-a25a-a3aff31a5bb9", "Hybrid commuting bike" %}
+    <div>
+        <h2>To work and beyond</h2>
+        <p class="mt-base">
+            Or do you need a new machine to take you to your job every day? I spent a decade commuting to work and can outfit you with hassle-free transportation.
+        </p>
+    </div>
+</section>
+
+<!-- Randonneur -->
+<section class="mt-xl sidebar sidebar-left">
+    {% img "dc6bb5ab-7d6f-4bfc-b419-a9af246374b0", "A traditional randonneuring bike with custom rack" %}
+    <div>
+        <h2>All night long</h2>
+        <p class="mt-base">
+            Or maybe you have a special affinity for riding through the night? A kitted out randonneuring rig will keep you moving efficiently and in style.
+        </p>
+    </div>
+</section>
+
+<!-- Weird bike -->
+<section class="mt-xl sidebar">
+    {% img "8464fd12-3995-4181-9291-2da96300222b", "An ultralight XC hardtail" %}
+    <div>
+        <h2>Let's get groovy</h2>
+        <p class="mt-base">
+            Whatever you're into, let's talk.
+        </p>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section class="divider mt-xl">
+    <h2 class="h1">FAQ</h2>
+    <div class="mt-base prose border-block details">
+        <details name="faq">
+            <summary>What is the ordering process?</summary>
+            <div class="stack-all">
+                <ol>
+                    <li>
+                        <p>If after our initial conversation, you'd like to have a Manzanita in your life, you'll pay a non-refundable deposit. You've now committed to the build, and I'll add you to the build schedule.</p>
+                    </li>
+                    <li>
+                        <p>Once added to the schedule, it's time for some homework. You'll receive links to some online
+                            forms to record your body and bike measurements and to list the components you'd like to use for
+                            the build. This information will help me design your bike for the proper clearances and the
+                            right fit. It's at this point that you'll want to consider getting a professional fit. That way
+                            we can be confident that the contact points—hands, butt, feet—are where they should be to
+                            provide a comfortable and efficient ride.</p>
+                    </li>
+                    <li>
+                        <p>Before your scheduled build time, we'll discuss all of the details that will make your bike
+                            unique. We'll talk ride characteristics, geometry, riding style, frame options, paint colors,
+                            fit, and component selection. Soon after, I'll provide a CAD drawing of your frame and a quote
+                            for the frame and components package. We can go back and forth at this point until you're happy.
+                            After approving the design, you'll pay 50% of the balance for the frame and components package.
+                        </p>
+                    </li>
+                    <li>
+                        <p>Once the bike returns from paint, you'll pay the remaining balance. Your new ride will then be
+                            carefully wrapped in protective packing material and sent to you fully insured. In an effort to
+                            reduce waste, your bike will likely arrive in a recycled cardboard box filled with recycled
+                            packing material.</p>
+                    </li>
+                    <li>
+                        <p>Bring the items to your favorite professional bicycle mechanic for final assembly and then hop on
+                            your new Manzanita and pedal!</p>
+                    </li>
+                </ol>
+            </div>
+        </details>
+        <details name="faq">
+            <summary>How fast can I get a custom bike?</summary>
+            <div>
+                <p>My goal is to get you a frameset within 16 weeks of your deposit. Full builds may take longer depending on parts availability.</p>
+            </div>
+        </details>
+        <details name="faq">
+            <summary>What are my paint options?</summary>
+            <div>
+                <p>The base price includes a single color powder coat with vinyl decals. There are probably thousands of powder colors to choose from. I can help you narrow down the search.</p>
+                <p>If you're looking for a fancier finish, I can send the frame to a professional bike finisher in Colorado. The cost and turnaround time will increase with this option, but make no mistake, it'll be worth it.</p>
+            </div>
+        </details>
+        <details name="faq">
+            <summary>What's included in the base price?</summary>
+            <div>
+                <p>You get a frame with custom geometry that's tailored to your height, weight, and riding preferences. Most additional braze-ons for things like water bottle cages, cargo cages, and framebag and rack mounts are included. Also included are dynamo lighting and Di2 ports and tapered head tubes. Below is a list of options that aren't included:</p>
+                <dl>
+                    <dt>Stainless internal routing sleeve</dt>
+                    <dd>$150 each</dd>
+                    <dt>Adjustable dropouts</dt>
+                    <dd>$150</dd>
+                    <dt>Painted head tube badge</dt>
+                    <dd>$50</dd>
+                </dl>
+            </div>
+        </details>
+        <details>
+            <summary>Do you build custom wheels, racks, or stems?</summary>
+            <div>
+                <p>I prefer to focus on making you the best frame and fork possible. There are several professional wheel
+                    builders I can recommend. Tubus and Nitto make the best touring and randonneuring racks. I regularly use
+                    those racks to place rack mounts. And we can always paint your stem to match the frame if you want that
+                    fully integrated look.</p>
+            </div>
+        </details>
+        <details name="faq">
+            <summary>What is the return policy?</summary>
+            <div>
+                <p>
+                    This is a custom bike made specifically for you. Frames and complete bike orders are final. I do not offer refunds or returns.
+                </p>
+            </div>
+        </details>
+        <details name="faq">
+            <summary>What is the warranty?</summary>
+            <div>
+                <p>I use only the best tubing and raw materials for making your frame, and I stand by my work. If you are the original owner, Manzanita Cycles offers a lifetime warranty on all Manzanita-made products that fail due to a materials or manufacturing defect.</p>
+                <p>If you crash, abuse, modify, or damage your Manzanita product, or if you install parts incorrectly, use incompatible parts, or fail to do proper maintenance on your bike, then it will no longer be covered by the warranty. Any paint and graphics are also not covered.</p>
+                <p>If you have a problem with a component not made by Manzanita Cycles, it's best to contact the component manufacturer for support. However, if you're having trouble getting traction, let me know and I'll try to help out.</p>
+            </div>
+        </details>
+        <details>
+            <summary>Is shipping included in the price?</summary>
+            <div>
+                <p>I typically use UPS to ship your bike with insurance to cover its replacement in case of theft or damage.
+                    Shipping to a US destination starts at <strong>{{ pricing.optionShippingBase }}</strong> for a frame.
+                    Framesets or complete bikes will be more.</p>
+                <p>I'm also happy to ship to international destinations. But please note that shipping fees, import fees, and import taxes can get very expensive.</p>
+                <p>You can also pick up the bike from Manzanita Cycles World Headquarters if you live near Reno.</p>
+            </div>
+        </details>
+    </div>
+</section>

@@ -1,0 +1,657 @@
+/* #region root */
+@font-face {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 1 999;
+    /* Variable font weight range */
+    font-display: swap;
+    /* Improves loading performance */
+    src: url('/assets/fonts/WorkSans-VariableFont_wght.woff2') format('woff2'),
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    font-style: italic;
+    font-weight: 1 999;
+    /* Variable font weight range */
+    font-display: swap;
+    /* Improves loading performance */
+    src: url('/assets/fonts/WorkSans-Italic-VariableFont_wght.woff2') format('woff2'),
+}
+
+:root {
+    --fs-huge: clamp(2.5rem, 0.2391rem + 11.3043vw, 9rem);
+    --fs-h1: clamp(2.5rem, 1.6304rem + 4.3478vw, 5rem);
+    --fs-h2: clamp(1.5rem, 0.9783rem + 2.6087vw, 3rem);
+    --fs-h3: clamp(1.1875rem, 0.7745rem + 2.0652vw, 2.25rem);
+    --fs-p: clamp(1rem, 0.8261rem + 0.8696vw, 1.375rem);
+    --fs-small: clamp(0.75rem, 0.663rem + 0.4348vw, 1rem);
+
+    --s-small: clamp(0.75rem, 0.663rem + 0.4348vw, 1rem);
+    --s-base: clamp(1rem, 0.8261rem + 0.8696vw, 1.5rem);
+    --s-lg: clamp(1.5rem, 0.9783rem + 2.6087vw, 3rem);
+    --s-xl: clamp(3rem, 1.9565rem + 5.2174vw, 6rem);
+    --s-2xl: clamp(6rem, 4.9565rem + 5.2174vw, 9rem);
+
+    --clr-gray: rgb(105, 105, 105);
+    --clr-light-gray: rgb(230, 230, 230);
+    --clr-black: rgb(0, 0, 0);
+    --clr-fail: hsl(0, 65%, 44%);
+    --clr-success: hsl(120, 60%, 38%);
+    --clr-link: hsl(220, 100%, 41%);
+
+    --border: 1px solid var(--clr-black);
+}
+
+/* #endregion */
+/* #region reset */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin-block: 0;
+    font: inherit;
+}
+
+/* Prevent font size inflation */
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+/* Remove list styles on navigation */
+nav ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+strong {
+    font-weight: 700;
+}
+
+em {
+    font-style: italic;
+}
+
+/* Set core body defaults */
+body {
+    line-height: 1.4;
+}
+
+h1,
+.h1,
+button,
+input,
+label,
+tr,
+th {
+    line-height: 1;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h2,
+.h2,
+.h3,
+h3 {
+    line-height: 1.1;
+}
+
+/* Remove number buttons in Chrome, Safari, Edge, and Opera */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Remove number buttons in Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+    text-wrap: balance;
+    font-weight: 700;
+}
+
+/* Give orphans a friend */
+p,
+li,
+figcaption,
+summary {
+    text-wrap: pretty;
+}
+
+/* Remove spacing on sides of figures */
+figure {
+    margin-inline: 0;
+}
+
+/* Improve user understanding of interactive elements */
+button,
+summary {
+    cursor: pointer;
+}
+
+/* Make images easier to work with */
+img,
+svg,
+video {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+    min-height: 10em;
+}
+
+/* #endregion */
+
+a,
+a:visited {
+    color: var(--clr-link);
+}
+
+body {
+    font-family: "work sans", system-ui, sans-serif;
+    font-size: var(--fs-p);
+    color: var(--clr-black);
+    margin-block: var(--s-base);
+    margin-inline: auto;
+    width: min(75rem, 100% - var(--s-base) * 2);
+    /* Make the container 1280px wide or at small screens 100% wide with some margins */
+}
+
+/* Add a border on the top and bottom */
+.border-block {
+    border-block: var(--border);
+}
+
+/* Default button styles */
+.button {
+    padding: var(--s-small);
+    border: var(--border);
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: .05em;
+}
+
+/* Flip default colors to stand out */
+.button-primary {
+    background-color: var(--clr-black);
+    color: #fff !important;
+}
+
+/* Default colors for to stand out less */
+.button-secondary {
+    background-color: #fff;
+    color: var(--clr-black) !important;
+}
+
+/* Make the button shrink a little when pressed */
+.button:active {
+    transform: scale(99%);
+}
+
+.center {
+    text-align: center;
+}
+
+/* EveryLayout - form an auto grid that naturally wraps elements */
+.cluster {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space, var(--s-base));
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* Add spacing when there's only one details element */
+.details-solo {
+    padding-block: var(--s-base);
+}
+
+/* Add padding to the first details element in a series */
+.details>details:first-child {
+    padding-top: var(--s-base);
+}
+
+/* Add padding to the last details element in a series */
+.details>details:last-child {
+    padding-bottom: var(--s-base);
+}
+
+/* Add borders and spacing between details elements */
+details+details {
+    margin-top: var(--s-base);
+    border-top: var(--border);
+    padding-top: var(--s-base);
+}
+
+/* Provide some distinction between summary and contents */
+details summary {
+    font-weight: 700;
+}
+
+/* Give some space between summary elements */
+details div {
+    margin-block: var(--s-base);
+}
+
+/* All content blocks need some space */
+details div>*+* {
+    margin-top: var(--s-base);
+}
+
+/* Make description lists two columns */
+dl {
+    display: grid;
+    grid-gap: var(--s-small) var(--s-base);
+    grid-template-columns: max-content;
+}
+
+/* Make DT stand out */
+dt {
+    font-weight: 700;
+}
+
+/* Remove default spacing and start in second column */
+dd {
+    margin: 0;
+    grid-column-start: 2;
+}
+
+/* Create more distinction between sections */
+.divider {
+    border-top: var(--border);
+    padding-top: var(--s-lg);
+}
+
+/* Make the error message stand out a bit */
+.error {
+    color: var(--clr-fail);
+    font-size: var(--fs-small);
+}
+
+/* Run items horizontally */
+.flex-start {
+    display: flex;
+    align-items: center;
+    gap: var(--s-base);
+}
+
+/* Confine color swatches to 1x1 aspect ratio */
+.frame-1x1 {
+    --n: 1;
+    --d: 1;
+    aspect-ratio: var(--n) / var(--d);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frame-1x1>img,
+.frame-1x1>video {
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
+}
+
+/* The biggest text for the biggest headlines */
+.fs-huge {
+    font-size: var(--fs-huge);
+    text-transform: uppercase;
+}
+
+.huge-ital {
+    font-style: italic;
+    margin-left: -.15em;
+}
+
+/* Small text */
+.fs-small {
+    font-size: var(--fs-small);
+}
+
+.grid-100,
+.grid-300 {
+    display: grid;
+    gap: var(--s-base);
+}
+
+/* Define a grid where children can get no smaller than 100px */
+.grid-100 {
+    grid-template-columns: repeat(auto-fit, minmax(min(100px, 100%), 1fr));
+}
+
+/* Define a grid where children can get no smaller than 300px */
+.grid-300 {
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+    align-items: center;
+}
+
+h1,
+.h1 {
+    font-size: var(--fs-h1);
+}
+
+h2,
+.h2 {
+    font-size: var(--fs-h2);
+}
+
+h3,
+.h3 {
+    font-size: var(--fs-h3);
+}
+
+/* Used to hide form messages after submission */
+.hidden {
+    display: none;
+}
+
+/* Style form elements */
+input,
+textarea {
+    outline: none;
+    border: var(--border);
+    padding: var(--s-small);
+}
+
+/* Make inputs no larger than 35ch wide */
+input {
+    width: min(35ch, 100%);
+}
+
+/* Darken the default color */
+input::placeholder {
+    color: var(--clr-gray);
+}
+
+/* Place labels above inputs */
+label {
+    display: block;
+    margin-bottom: .2em;
+}
+
+/* Cap line lengths for shorter blocks of text */
+.line-width-short {
+    max-width: 40ch;
+}
+
+/* Utilities for adding margins */
+.mb-xl {
+    margin-bottom: var(--s-xl);
+}
+
+.mt-base {
+    margin-top: var(--s-base);
+}
+
+.mt-lg {
+    margin-top: var(--s-lg);
+}
+
+.mt-xl {
+    margin-top: var(--s-xl);
+}
+
+.mt-2xl {
+    margin-top: var(--s-2xl);
+}
+
+/* Add styles to the price cards on the bike pages */
+.price-card {
+    border: var(--border);
+    padding: var(--s-base);
+}
+
+.price-card h3 {
+    font-size: var(--fs-p);
+}
+
+.price-card ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.price-card li+li {
+    margin-top: var(--s-small);
+}
+
+/* Custom checkmarks next to line items */
+.price-card ul li::before {
+    content: '\2713';
+    color: var(--clr-gray);
+    margin-right: .5em;
+    display: inline-block;
+}
+
+/* Make the button full width */
+.price-card .button {
+    width: 100%;
+    text-align: center;
+}
+
+/* Make cards sit in a row on wider screens then wrap to one column */
+.price-card-switcher {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--s-base);
+}
+
+.price-card-switcher>* {
+    flex-grow: 1;
+    flex-basis: calc((30rem - 100%) * 999);
+}
+
+.price-card-switcher> :nth-last-child(n+ 4),
+.price-card-switcher> :nth-last-child(n+ 4)~* {
+    flex-basis: 100%;
+}
+
+/* Set vertical spacing  */
+.price-card-stack {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.price-card-stack>*+* {
+    margin-block-start: var(--s-base);
+}
+
+.price-card-stack:only-child {
+    block-size: 100%;
+}
+
+/* Push the button to the bottom of the card */
+.price-card-stack> :nth-child(3) {
+    margin-block-end: auto;
+}
+
+/* Cap the width for perfect line lengths */
+.prose {
+    width: min(100%, 65ch);
+}
+
+.prose-center {
+    margin-inline: auto;
+}
+
+/* Add more space above headers */
+.prose h2,
+.prose h3 {
+    margin-top: 1.5em;
+}
+
+/* Allow contents to scroll on narrow screens */
+.scroll {
+    overflow: auto;
+}
+
+/* Display text on right and img on left */
+.sidebar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--s-lg);
+    align-items: center;
+}
+
+.sidebar> :last-child {
+    flex-basis: 20rem;
+    flex-grow: 1;
+}
+
+.sidebar> :first-child {
+    flex-basis: 0;
+    flex-grow: 999;
+    min-inline-size: 50%;
+}
+
+/* Display text on left and img on right */
+.sidebar-left {
+    flex-direction: row-reverse;
+}
+
+/* Make success message on signup form green */
+#signup-form-message,
+#contact-form-message {
+    color: var(--clr-success);
+}
+
+/* SLUB = smaller, lighter, uppercase, bold */
+.slub {
+    font-weight: 700;
+    color: var(--clr-gray);
+    text-transform: uppercase;
+}
+
+small {
+    font-size: var(--fs-small);
+}
+
+/* Add consistent spacing between elements */
+.stack>*+* {
+    margin-top: var(--s-base);
+}
+
+/* Add consistent spacing between elements and their children */
+.stack-all *+* {
+    margin-top: var(--s-base);
+}
+
+/* EveryLayout stack for consistent vertical spacing */
+.stack-xl>*+* {
+    margin-top: var(--s-xl);
+}
+
+/* Display 3 items horizontally on big screens 
+   and in a single column on small screens  */
+.switcher {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--s-lg);
+}
+
+.switcher>* {
+    flex-grow: 1;
+    flex-basis: calc((40rem - 100%) * 999);
+}
+
+.switcher> :nth-child(2) {
+    flex-grow: 2;
+}
+
+.switcher> :nth-last-child(n+ 4),
+.switcher> :nth-last-child(n+ 4)~* {
+    flex-basis: 100%;
+}
+
+/* Table styling borrowed from https://piccalil.li/blog/styling-tables-the-modern-css-way/ */
+table {
+    border-collapse: collapse;
+    text-align: left;
+    width: 100%;
+    table-layout: fixed;
+    border: var(--border);
+}
+
+/* Make textarea the same width as prose */
+textarea {
+    width: min(65ch, 100%);
+}
+
+/* Make headers bold */
+th {
+    font-weight: 700;
+}
+
+/* Set width of header column */
+th:first-of-type {
+    width: 14rem;
+}
+
+/* Provide some cell padding and alignment */
+th,
+td {
+    padding: .75rem;
+    vertical-align: baseline;
+}
+
+/* Make the header row distinct */
+thead th {
+    vertical-align: bottom;
+    background-color: var(--clr-black);
+    color: #fff;
+}
+
+/* Set widths for columns that aren't the header column */
+thead th:not(:first-child) {
+    width: 6rem;
+}
+
+/* Add zebra striping to header column */
+tbody tr:nth-child(even) th {
+    background: var(--clr-light-gray);
+}
+
+/* Add zebra striping to header column */
+tbody tr:nth-child(odd) th {
+    background: #fff;
+}
+
+/* Add zebra striping to body rows */
+tbody tr:nth-child(even) {
+    background-color: var(--clr-light-gray);
+}
+
+/* Header column should remain visible on small screens */
+th:first-child {
+    position: sticky;
+    left: 0;
+}
+
+/* A hacky way to add a border to the header column */
+th:first-child::after {
+    content: '';
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-end: 0;
+    width: 1px;
+    height: 100%;
+    background: var(--clr-black);
+}

@@ -1,0 +1,374 @@
+---
+title: Whippet
+featuredImage: 1693d2f8-88a4-4877-a5d5-5073329e9150
+alt: Whippet gravel bike
+metaDesc: A fast and comfortable gravel bike that's easy to love.
+buildType: Stock
+---
+<!-- Hero -->
+<section>
+  <div>
+    <p class="slub">{{ whippet.subhead }}</p>
+    <h1 class="fs-huge huge-ital">{{ whippet.name }}</h1>
+  </div>
+  <img class="mt-xl" data-blink-uuid="{{ whippet.heroImg }}" alt="{{ whippet.heroImgAlt }}">
+</section>
+<!-- Slogan -->
+<section class="mt-xl">
+  <h2 class="h1 center">{{ whippet.slogan }}</h2>
+  <p class="prose prose-center mt-base">The Whippet is your private jet. It's designed to float over gravel roads at maximum speed while in maximum comfort. The low air pressure you can run in the 29x2.25 tires lowers the rolling resistance while improving traction and reducing the vibrations that sap your energy. Custom UDH-compatible dropouts and convenient external routing make setup and maintenance super simple.</p>
+</section>
+<!-- Shopping -->
+<section class="mt-xl">
+  <div class="price-card-switcher">
+    <div class="price-card price-card-stack">
+      <h3>Frameset</h3>
+      <p class="h2"><strong>{{ whippet.basePrice }}</strong></p>
+      <ul class="fs-small">
+        <li>Whippet frame</li>
+        <li>Seido MGV carbon fork</li>
+        <li>Cane Creek 40 headset</li>
+      </ul>
+      <p class="mt-lg"><a class="button button-primary" href="{{ whippet.baseDeposit }}">Place deposit</a></p>
+    </div>
+    <div class="price-card price-card-stack">
+      <h3>GRX build</h3>
+      <p class="h2"><strong>{{ whippet.buildPrice }}</strong></p>
+      <ul class="fs-small">
+        <li>Whippet frame</li>
+        <li>Seido MGV carbon fork</li>
+        <li>Cane Creek 40 headset</li>
+        <li>Grx build kit</li>
+      </ul>
+      <p class="mt-lg"><a class="button button-primary" href="{{ whippet.buildDeposit }}">Place deposit</a></p>
+    </div>
+    <div class="price-card price-card-stack">
+      <h3>Custom build</h3>
+      <strong class="h2">$TBD</strong>
+      <ul class="fs-small">
+        <li>Whippet frame</li>
+        <li>Seido MGV carbon fork</li>
+        <li>Headset of your choice</li>
+        <li>Custom build kit</li>
+      </ul>
+      <p class="mt-lg"><a class="button button-primary" href="{{ whippet.buildDeposit }}">Place deposit</a></p>
+    </div>
+  </div>
+  <details class="mt-xl border-block details-solo">
+    <summary>Show me the GRX build kit</summary>
+    {% include "partials/_grxBuild.html" %}
+  </details>
+</section>
+<!-- Best gravel tires-->
+<section class="mt-xl sidebar sidebar-left divider">
+  {% img "14839a8a-10b4-450c-9fc0-b45ce84ddfc5", "The Whippet frame can clear a 58mm-wide tire." %}
+  <div>
+    <h2>The best gravel tires are mountain bike tires</h2>
+    <p class="mt-base">
+      The Whippet is optimized for 50 mm - 58 mm tires so you can ride faster
+      with more comfort and control on whatever type of terrain you call
+      gravel.
+    </p>
+  </div>
+</section>
+<!-- Futureproof dropouts-->
+<section class="mt-xl sidebar">
+  {% img "f5aa3521-0956-40b9-ad29-28f2695a248b", "CNC machined UDH dropout insert" %}
+  <div>
+    <h2>Future-proof dropouts</h2>
+    <p class="mt-base">
+      The dropouts feature bolt-on inserts designed for Sram UDH and flat
+      mount brakes. When new standards emerge, a quick swap of the inserts
+      will keep your Whippet up-to-date.
+    </p>
+  </div>
+</section>
+
+<!-- Easy to love-->
+<section class="mt-xl sidebar sidebar-left">
+  {% img "ff273bb7-d725-4cbc-89e9-e9461a74f0e2", "Ollie Cleveland of Dark Matter Finishing applies a clear coat over a Manzanita frame." %}
+  <div>
+    <h2>Easy to love</h2>
+    <p class="mt-base">
+      External routing is a feature! 3d-printed housing guides keep the
+      Whippet rattle-free and easy to maintain. The guide setup can be
+      configured depending on whether you're running a wireless drivetrain and
+      dropper post. The zip-tie-free friction guides keep the bike looking
+      sleek.
+    </p>
+  </div>
+</section>
+<!-- Proportional frame sizes-->
+<section class="mt-xl sidebar">
+  {% img "543df38b-d07c-4a2b-9bbf-aa2eef718897", "A rainbow of frames growing in size" %}
+  <div>
+    <h2>Proportional frame sizes</h2>
+    <p class="mt-base">
+      Short and tall riders finally get frames that scale for their size so
+      everyone can enjoy a bike that handles intuitively. The frame tubes also
+      scale to get that perfect blend of precision and suppleness that steel
+      is famous for.
+    </p>
+  </div>
+</section>
+<!-- Geometry section-->
+<section class="mt-xl divider">
+  <h2 class="h1">Geometry</h2>
+  {% include "partials/_whippetGeo.html" %}
+  <p class="mt-base"><small>
+      *Angle determined at average saddle height<br />
+      **Center to top<br />
+      ***Measured with 57mm (2.25") tire
+    </small></p>
+</section>
+<!-- Frame fit calc-->
+<section class="mt-xl divider">
+  <div>
+    <h2 class="h1">Frame fit calculator</h2>
+    <p class="mt-base prose">
+      Measure your current bike, and the calculator will not only recommend the best <strong>Whippet frame size</strong> for you but also recommend the optimal <strong>stem length</strong>, <strong>stem angle</strong>, and <strong>headset spacer stack</strong>. It's the easiest and most accurate way to guarantee the perfect fit.
+    </p>
+    <div class="prose mt-lg border-block details">
+      <details>
+        <summary>Measuring instructions</summary>
+        <div>
+          <h3>Find your fit fast</h3>
+          <p><strong>This process should take around 10 minutes.</strong></p>
+          <p>You will need the following to get started:</p>
+          <ol>
+            <li>A drop bar bike you're comfortable on</li>
+            <li>Tape measure</li>
+            <li>Pencil or pen</li>
+            <li>Piece of paper</li>
+          </ol>
+        </div>
+        <div>
+          <h3>Step 1: Bike setup</h3>
+          <video src="/assets/img/bike-to-corner.mp4" autoplay disablepictureinpicture loop></video>
+          <ol>
+            <li>Place your bike along an inside corner of a room with the rear wheel touching one wall and the bike positioned parallel with the adjacent wall.</li>
+            <li>The front wheel should be pointing straight ahead.</li>
+            <li>The handlebar can rest on the wall to keep the bike upright.</li>
+          </ol>
+        </div>
+        <div>
+          <h3>Measuring tips</h3>
+          <ol>
+            <li>Measure to the nearest millimeter.</li>
+            <li>If you're using a tape measure with feet and inches, measure to the nearest 1/16 inch and then convert to millimeters.</li>
+            <li>Try to hold the measuring tape as close to horizontal and vertical as you can.</li>
+            <li>Try to keep the measuring tape parallel with the wall the bike is resting on.</li>
+          </ol>
+        </div>
+        <div>
+          <h3>Step 2: Measure handlebar stack</h3>
+          {% img "33fa01b4-7784-47fd-8a27-70094c2449f5", "Drawing showing how to measure handlebar stack", "max-w-md" %}
+          <ol>
+            <li>Measure vertically from the floor to the center of the handlebar near the stem and write down your measurement (y1).</li>
+            <li>Measure vertically from the floor to the center of the bottom bracket and write down your measurement (y2).</li>
+            <li>Subtract the second measurement from the first measurement and enter that number as your handlebar stack (y1 - y2).</li>
+          </ol>
+        </div>
+        <div>
+          <h3>Step 3: Measure handlebar reach</h3>
+          {% img "a849582a-a5c5-46e8-8ac4-6360cf27c79d", "Drawing showing how to measure handlebar reach", "max-w-md" %}
+          <ol>
+            <li>Measure horizontally from the rear wall to the center of your handlebars near the stem and write down your measurement (x1).</li>
+            <li>Measure horizontally from the rear wall to the center of your bottom bracket and write down your measurement (x2).</li>
+            <li>Subtract the second measurement from the first measurement and enter that number as your handlebar reach (x1 - x2).</li>
+          </ol>
+        </div>
+      </details>
+    </div>
+    {% include "partials/_whippetFitCalc.html" %}
+  </div>
+
+</section>
+<!-- FAQ -->
+<section class="divider mt-xl">
+  <h2 class="h1">FAQ</h2>
+  <div class="mt-base prose border-block details">
+    <details name="faq">
+      <summary>What are the frame specs?</summary>
+      <div>
+        <dl>
+          <dt>Max tire width</dt>
+          <dd>2.3" or 58mm</dd>
+          <dt>Hub dimensions</dt>
+          <dd>12x100 front, 12x142 rear</dd>
+          <dt>Derailleur hanger</dt>
+          <dd>UDH / Sram Transmission</dd>
+          <dt>Chainline</dt>
+          <dd>47 to 49</dd>
+          <dt>Max chainring</dt>
+          <dd>42</dd>
+          <dt>Brake type</dt>
+          <dd>Flat mount</dd>
+          <dt>Max front rotor size</dt>
+          <dd>180</dd>
+          <dt>Max rear rotor size</dt>
+          <dd>160</dd>
+          <dt>Seat post diameter</dt>
+          <dd>27.2</dd>
+          <dt>Seat post clamp diameter</dt>
+          <dd>29.8 to 30.0</dd>
+          <dt>Bottom bracket</dt>
+          <dd>68 BSA</dd>
+        </dl>
+      </div>
+    </details>
+    <details name="faq">
+      <summary>What's included with the frame?</summary>
+      <div>
+        <ul>
+          <li>Seido MGV fork unpainted</li>
+          <li>Front and rear bolt-on axles</li>
+          <li>Sram Universal Derailleur Hanger</li>
+          <li>Wolftooth seat collar</li>
+          <li>Cane Creek 40 headset</li>
+          <li>Clear chainstay protection</li>
+          <li>3d-printed friction housing guides</li>
+          <li>3d-printed down tube protector</li>
+        </ul>
+      </div>
+    </details>
+    <details name="faq">
+      <summary>How fast can I get my hands on a Whippet?</summary>
+      <div>
+        <p>My goal is to get you a frameset within 12 weeks of your deposit. Full builds may take longer depending on parts availability.</p>
+      </div>
+    </details>
+    <details name="faq">
+      <summary>What are my color options?</summary>
+      <div>
+        <ol>
+          <li>White frame with black decals</li>
+          <li>Manzanita red frame with light green decals</li>
+        </ol>
+      </div>
+    </details>
+    <details name="faq">
+      <summary>Can I get the frame and fork custom painted?</summary>
+      <div>
+        <p>
+          Yes you can. <a href="/contact">Contact me</a> for pricing and
+          turnaround time.
+        </p>
+      </div>
+    </details>
+    <details name="faq">
+      <summary>What is the return policy?</summary>
+      <div>
+        <p>
+          All Whippet frames are made to order, one-at-a-time in my workshop. Frame set and complete bike orders are final. I do not offer refunds or returns.
+        </p>
+      </div>
+    </details>
+    <details name="faq">
+      <summary>What is the warranty?</summary>
+      <div>
+        <p>I use only the best tubing and raw materials for making your frame, and I stand by my work. If you are the original owner, Manzanita Cycles offers a lifetime warranty on all Manzanita-made products that fail due to a materials or manufacturing defect.</p>
+        <p>If you crash, abuse, modify, or damage your Manzanita product, or if you install parts incorrectly, use incompatible parts, or fail to do proper maintenance on your bike, then it will no longer be covered by the warranty. Any paint and graphics are also not covered.</p>
+        <p>If you have a problem with a component not made by Manzanita Cycles, it's best to contact the component manufacturer for support. However, if you're having trouble getting traction, let me know and I'll try to help out.</p>
+      </div>
+    </details>
+    <details name="faq">
+      <summary>Can I run a front derailleur?</summary>
+      <div>
+        <p>
+          No. The bike frame is optimized for 1x drivetrains. The performance
+          and comfort benefits of wider tires trumps the benefits of 2x
+          drivetrains.
+        </p>
+      </div>
+    </details>
+    <details name="faq">
+      <summary>Can I run 650b wheels?</summary>
+      <div>
+        <p>
+          The two smallest sizes are designed around 650b wheels. All other
+          sizes are designed around 700c wheels. If you run 650b wheels on the
+          larger frame sizes your bottom bracket will drop around 19mm. That
+          may cause frequent pedal strikes riding off road. Therefore, it's
+          not recommended.
+        </p>
+      </div>
+    </details>
+    <details name="faq">
+      <summary>What's the max weight I can carry on a rear rack?</summary>
+      <div>
+        <p>
+          The frame isn't designed for carrying heavy rear loads. I'd
+          recommend carrying no more than 8lbs, including the weight of the
+          rack.
+        </p>
+      </div>
+    </details>
+    <details name="faq">
+      <summary>What's the max weight I can carry on the fork?</summary>
+      <div>
+        <p>
+          The Seido MGV fork can carry a max load of 6.6lbs using a 2-bolt
+          cage, 9.9lbs using a 3-bolt cage, 44lbs for a lowrider rack with 4
+          mounting points, and 22lbs for a rack with 3 mounting points.
+        </p>
+      </div>
+    </details>
+    <details name="faq">
+      <summary>How many headset spacers can I use?</summary>
+      <div>
+        <p>
+          Seido limits the total headset stack below the stem to 35mm from the top of the upper bearing. Most headset top caps are around 15-16mm, so you have 19-20mm of space for additional spacers. Additionally, you'll need to place a 5mm spacer above the stem.
+        </p>
+      </div>
+    </details>
+    <details name="faq">
+      <summary>Can I run a suspension fork on this frame?</summary>
+      <div>
+        <p>
+          Most gravel suspension forks with 30mm-40mm of travel will work. The
+          taller fork length will likely slacken the seat tube and head tube
+          angles a bit, but not enough to dramatically change how the bike
+          handles.
+        </p>
+      </div>
+    </details>
+    <details name="faq">
+      <summary>
+        I don't want to run a carbon fork. Can you make me a steel fork
+        instead?
+      </summary>
+      <div>
+        <p>
+          The Whippet is designed specifically for the Seido MGV carbon fork
+          with its tapered steerer. I think a large head tube and a skinny
+          steel fork clash. But I'm happy to make you a bike similar to the
+          Whippet with a skinny head tube and a matching steel fork. See the
+          <a href="/bikes/custom">custom option</a>.
+        </p>
+      </div>
+    </details>
+    <details name="faq">
+      <summary>Can I run my housing internally?</summary>
+      <div>
+        <p>
+          The Whippet is designed to be easy to maintain. All lines run
+          externally along the down tube with a port in the seat tube for
+          running an optional dropper post. If you want a bike with full
+          internal lines, I'm happy to make you a
+          <a href="/bikes/gravel">custom bike</a> instead.
+        </p>
+      </div>
+    </details>
+    <details>
+      <summary>Is shipping included in the price?</summary>
+      <div>
+        <p>I typically use UPS to ship your bike with insurance to cover its replacement in case of theft or damage.
+          Shipping to a US destination starts at <strong>{{ pricing.optionShippingBase }}</strong> for a frame.
+          Framesets or complete bikes will be more.</p>
+        <p>I'm also happy to ship to international destinations. But please note that shipping fees, import fees, and import taxes can get very expensive.</p>
+        <p>You can also pick up the bike from Manzanita Cycles World Headquarters if you live near Reno.</p>
+      </div>
+    </details>
+  </div>
+</section>

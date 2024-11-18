@@ -1,0 +1,10 @@
+{
+    "name": "{{ site.title }}",
+    "short_name": "{{ site.shortTitle }}",
+    "description": "{{ site.description }}",
+    "start_url": "{{ '/' | url }}",
+    "display": "standalone",
+    "background_color": "#FFFFFF",
+    "theme_color": "#000000"
+  }
+  

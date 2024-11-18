@@ -1,0 +1,30 @@
+---
+layout: layouts/base.njk
+title: Manzanita Cycles
+metaDesc: Custom steel bike frames for your next adventure
+type: website
+featuredImage: ff273bb7-d725-4cbc-89e9-e9461a74f0e2
+---
+<!-- Hero section -->
+<h1>{{ site.description }}</h1>
+<!-- Bikes section -->
+<section>
+  {% for post in collections.bikes %}
+  {% include "partials/_bikeCard.html" %}
+  {% endfor %}
+</section>
+<!-- Testimonials section -->
+<section class="mt-xl switcher divider">
+  {% for quote in quotes %}
+  {% include "partials/_quoteCard.html" %}
+  {% endfor %}
+</section>
+<!-- Blog section -->
+<section class="mt-xl divider">
+  <div class="stack-xl">
+    {% set latest_posts = collections.blog | reverse %}
+    {% for post in latest_posts.slice(0,3) %}
+    {% include "partials/_blogCard.html" %}
+    {% endfor %}
+  </div>
+</section>

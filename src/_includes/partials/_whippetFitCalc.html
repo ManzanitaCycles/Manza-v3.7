@@ -1,0 +1,75 @@
+<form id="frameFitCalc" class="stack mt-lg">
+    <div>
+        <label for="user_handlebar_stack">Enter your handlebar stack (mm)</label>
+        <input type="number" id="user_handlebar_stack" placeholder="e.g. 690">
+        <p id="user_handlebar_stack_error" class="error"></p>
+    </div>
+    <div>
+        <label for="user_handlebar_reach">Enter your handlebar reach (mm)</label>
+        <input type="number" id="user_handlebar_reach" placeholder="e.g. 465">
+        <p id="user_handlebar_reach_error" class="error"></p>
+    </div>
+    <div id="results" class="flex-start">
+        <button class="button button-primary" type="submit">Calculate</button>
+        <button class="button button-secondary" type="button" id="clearButton">Clear</button>
+    </div>
+</form>
+<div id="calculated-results" class="hidden mt-lg">
+    <h3>Results</h3>
+    <div class="scroll mt-base">
+        <table class="prose">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Current bike</th>
+                    <th>Best match</th>
+                    <th>Best neg. stem</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Handlebar stack</th>
+                    <td id="user-handlebar-stack"></td>
+                    <td id="best-handlebar-stack"></td>
+                    <td id="neg-stem-handlebar-stack"></td>
+                </tr>
+                <tr>
+                    <th>Handlebar reach</th>
+                    <td id="user-handlebar-reach"></td>
+                    <td id="best-handlebar-reach"></td>
+                    <td id="neg-stem-handlebar-reach"></td>
+                </tr>
+                <tr>
+                    <th>Frame size</th>
+                    <td>-</td>
+                    <td id="best-frame-size"></td>
+                    <td id="neg-stem-frame-size"></td>
+                </tr>
+                <tr>
+                    <th>Stem angle</th>
+                    <td>-</td>
+                    <td id="best-stem-angle"></td>
+                    <td id="neg-stem-angle"></td>
+                </tr>
+                <tr>
+                    <th>Stem length</th>
+                    <td>-</td>
+                    <td id="best-stem-length"></td>
+                    <td id="neg-stem-length"></td>
+                </tr>
+                <tr>
+                    <th>Spacer stack</th>
+                    <td>-</td>
+                    <td id="best-spacer-stack"></td>
+                    <td id="neg-stem-spacer-stack"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="mt-base stack prose">
+        <p>Based on the measurements from your bike, the calculator has found the best setup for your new Whippet.</p>
+        <p>The <strong>best match</strong> shows you the closest dimensional match to your current bike.</p>
+        <p>But some people might prefer the look of their stem angled down. In that case, the calculator has also found the <strong>best match with a negative stem angle</strong>.</p>
+        <p>Many times the best match is also a setup with a negative stem angle. Win, win!</p>
+    </div>
+</div>
