@@ -41,9 +41,11 @@ module.exports = function (eleventyConfig) {
             <figcaption class="text-stone-500">${name}</figcaption>`
     });
     return {
+        pathPrefix: "/",
         dir: {
             input: "src",
             output: "public"
-        }
+        },
+        trailingSlash: "always", // Enforces trailing slashes
     };
 };
