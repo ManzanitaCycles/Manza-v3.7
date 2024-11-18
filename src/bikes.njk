@@ -7,7 +7,7 @@ type: website
 ---
 <h1>Bikes</h1>
 <div>
-  {% for post in collections.bikes %}
+  {% for post in collections.bikes | sort('data.title') | reverse %}
   {% include "partials/_bikeCard.html" %}
   {% endfor %}
 </div>
