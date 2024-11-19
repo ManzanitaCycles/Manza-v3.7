@@ -11,11 +11,11 @@ This is the bikepacking bike I’ve been dreaming of for a few years now.
 
 It all started with determining the max tire size I wanted to use. In this case, I chose 29×2.8 (71×622) tires, which offer enough float over loose and chunky terrain without feeling like total pigs. Since trails in the winter up here can be awfully muddy, the bike is initially set up with a pair of 2.6″-wide [Maxxis Rekons](https://www.maxxis.com/catalog/tire-559-140-rekon) for extra clearance.
 
-On the front end, I wanted the option to run a rigid fork or a 100mm suspension fork. That way I can adapt the bike to different trips. I chose the [Enve Mountain Fork](https://www.enve.com/en/products/mountain-fork/) for its tire clearance, high build quality, and it’s mid-fork mounting options.
+On the front end, I wanted the option to run a rigid fork or a 100mm suspension fork. That way I can adapt the bike to different trips. I chose the [Enve Mountain Fork](https://enve.com/collections/mountain-components/products/mountain-fork) for its tire clearance, high build quality, and it’s mid-fork mounting options.
 
 To maximize the bike’s carrying capacity, I included mounting points for a full frame bag and large top tube bag. [Rockgeist](https://rockgeist.com/) knocked it out of the park with a custom set of bolt-on bags. I also made sure to add mounting points for a rear rack. [All travel bikes should be able to easily run a rear rack](/blog/in-defense-of-panniers/) in case you need panniers for extra storage.
 
-For components, I went with the solid and popular 12-speed Sram Eagle drivetrain. The 10-50t cassette combined with a 30t chainring offers a great gear range for loaded, off-road exploring. The [White Industries MR30 crankset](http://www.whiteind.com/crankm30) and bottom bracket are bombproof and beautiful.
+For components, I went with the solid and popular 12-speed Sram Eagle drivetrain. The 10-50t cassette combined with a 30t chainring offers a great gear range for loaded, off-road exploring. The [White Industries MR30 crankset](https://www.whiteind.com/product/m30-cranks/) and bottom bracket are bombproof and beautiful.
 
 It was actually the silver White crankset with its brass self-extracting ring that helped me determine the overall look of the bike. I installed a brass head tube badge and asked the painter to match the brass color with the Manzanita graphics. I chose a dark blue for the paint color to allow the silver components to stand out.
 

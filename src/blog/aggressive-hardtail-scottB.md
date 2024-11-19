@@ -13,7 +13,7 @@ I chose large-diameter and thick-walled tubes all around to make the bike stiff 
 
 The dimensions of this frame follow many of the Forward Geometry principles. The seat tube angle is steep enough to put the rider in the optimal position for climbing steep grades. The front end of the bike is lengthened to improve descending stability and confidence. The bottom bracket height strikes a nice balance between high enough to limit pedal strikes but low enough for nimble handling. And finally, the chainstay length is set to balance rider weight for good cornering traction.
 
-Scott chose the new [Manitou Mezzer Pro fork](https://hayesbicycle.com/products/mezzer-1?variant=32139567824941) with its burly 37 mm stanchions for ultimate stiffness. The bike runs most of the new Shimano XT 12-speed components, including the 4-piston brake and 203 mm rotor up front, the 2-piston brake and 180 mm rotor in back, front and rear hubs, the huge 10-51t cassette and matching rear derailleur. The tried and true Gravity Light crank wears a stainless Wolftooth 30t ring and a bash guard because there’s no doubt Scott is going to bash.
+Scott chose the Manitou Mezzer Pro fork with its burly 37 mm stanchions for ultimate stiffness. The bike runs most of the new Shimano XT 12-speed components, including the 4-piston brake and 203 mm rotor up front, the 2-piston brake and 180 mm rotor in back, front and rear hubs, the huge 10-51t cassette and matching rear derailleur. The tried and true Gravity Light crank wears a stainless Wolftooth 30t ring and a bash guard because there’s no doubt Scott is going to bash.
 
 [Let me know](/contact/) if you’d like an aggressive hardtail in your life.
 
