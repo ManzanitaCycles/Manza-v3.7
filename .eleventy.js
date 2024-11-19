@@ -2,10 +2,8 @@ const htmlmin = require("html-minifier");
 const CleanCSS = require("clean-css");
 
 module.exports = function (eleventyConfig) {
-    // Passthrough webmanifest
-    eleventyConfig.addPassthroughCopy({ "src/site.webmanifest.json": "site.webmanifest" });
-    // Copy _headers to the output directory
-    eleventyConfig.addPassthroughCopy("src/_headers");
+    // Pass through the favicon folder to the public directory
+    eleventyConfig.addPassthroughCopy({ "src/favicon": "/" });
     // Passthrough images
     eleventyConfig.addPassthroughCopy("src/assets/");
     // Post image shortcode
