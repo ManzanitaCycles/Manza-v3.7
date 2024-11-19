@@ -4,6 +4,8 @@ const CleanCSS = require("clean-css");
 module.exports = function (eleventyConfig) {
     // Pass through the favicon folder to the public directory
     eleventyConfig.addPassthroughCopy({ "src/favicon": "/" });
+    // Pass through _headers file
+    eleventyConfig.addPassthroughCopy({ "src/_headers": "/" });
     // Passthrough images
     eleventyConfig.addPassthroughCopy("src/assets/");
     // Post image shortcode
