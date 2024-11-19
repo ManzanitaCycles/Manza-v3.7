@@ -176,8 +176,6 @@ I’ll rely on the Scratch Labs hydration mix to keep my legs from cramping. I s
 
 Planning how to ride the race is easily the hardest part of preparing for the race. In fact it’s downright intimidating. Making a frame, building up a bike, creating a pack list, that’s the fun stuff. Now it’s time to analyze the route, try to create a realistic schedule to follow, and to make sure I survive this thing.
 
-<iframe scrolling="no" src="https://ridewithgps.com/embeds?type=route&id=37370806&sampleGraph=true" style="width: 1px; min-width: 100%; height: 700px; border: none; margin-bottom: 1.5rem;"></iframe>
-
 The first thing to do is to upload the latest GPX file of the route into RidewithGPS. In the app I add points of interest (POIs), like convenience store locations, water resupply locations, and reminder warnings that I’m about to enter a long stretch of the route with no services. RidewithGPS will also give me an elevation profile and will list the length and average gradients of the major climbs. I can then share the route to my Wahoo GPS computer to provide me with turn-by-turn directions on route. It’s an indispensable digital tool for safely navigating remote locations. I also have the route imported into the OSMAnd GPS app on my phone as a backup.
 
 Now that I have the route ready for navigation, I have to guess how far I think I can ride each day. My goal is to complete the ride in 4 days. That’s an average of 106.25 miles and 9,200 feet of climbing each day. Dear lord! What am I getting myself into? The guys and gals that put in 200 mile days during these kind of races are superheroes.
