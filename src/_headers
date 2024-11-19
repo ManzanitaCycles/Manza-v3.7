@@ -1,0 +1,2 @@
+/*
+  Content-Security-Policy: default-src 'self'; script-src 'self' https://ucarecdn.com https://*.ucarecdn.com; style-src 'self' 'unsafe-inline'; img-src 'self' https://ucarecdn.com https://*.ucarecdn.com data:; connect-src 'self' https://ucarecdn.com https://*.ucarecdn.com; object-src 'none'
