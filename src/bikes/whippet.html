@@ -4,6 +4,11 @@ featuredImage: 1693d2f8-88a4-4877-a5d5-5073329e9150
 alt: Whippet gravel bike
 metaDesc: A fast and comfortable gravel bike that's easy to love.
 buildType: Stock
+videoSrc: "/assets/img/bike-to-corner.mp4"
+autoplay: true
+loop: true
+disablePictureInPicture: true
+muted: true
 ---
 <!-- Hero -->
 <section>
@@ -144,7 +149,11 @@ buildType: Stock
         </div>
         <div>
           <h3>Step 1: Bike setup</h3>
-          <video src="/assets/img/bike-to-corner.mp4" autoplay disablepictureinpicture loop></video>
+          <video src="{{ videoSrc }}"
+          {% if autoplay %}autoplay{% endif %}
+          {% if loop %}loop{% endif %}
+          {% if disablePictureInPicture %}disablepictureinpicture{% endif %}
+          {% if muted %}muted{% endif %}></video>
           <ol>
             <li>Place your bike along an inside corner of a room with the rear wheel touching one wall and the bike positioned parallel with the adjacent wall.</li>
             <li>The front wheel should be pointing straight ahead.</li>

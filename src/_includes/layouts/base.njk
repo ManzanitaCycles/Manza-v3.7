@@ -14,7 +14,7 @@
   <!-- Styles -->
   {% set css %} {% include "styles.css" %} {% endset %}
   <style>
-    {{ css | cssmin | safe }}
+    {{css | cssmin | safe}}
   </style>
   <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -29,7 +29,7 @@
 
 <body>
   <header class="stack">
-    <a href="/" aria-label="Go to the home page">
+    <a href="/" {% if page.url=='/' %}aria-current="page" {% endif %} aria-label="Go to the home page">
       {% include "partials/_manzanitaSVG.html" %}
     </a>
     {% include "partials/_navigation.html" %}

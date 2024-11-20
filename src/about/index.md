@@ -1,5 +1,5 @@
 ---
-title: Your bicycle should disappear under you so you can focus on your adventure
+title: Focus on your adventure
 permalink: /about/
 layout: layouts/page.njk
 metaDesc: Your new bike should disappear under you so you can focus on your adventure

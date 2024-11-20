@@ -1,7 +1,8 @@
 <h2>Hey bike nerds!</h2>
 <p class="line-width-short">Subscribe to the newsletter to get the latest Manzanita news.</p>
 <form id="signup-form" class="mt-base cluster" action="https://usebasin.com/f/89b25adb96c4" method="POST">
-    <input type="email" id="email" name="email" required placeholder="Email address" autocomplete="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
+    <label for="email-signup" class="visually-hidden">Email</label>
+    <input type="email" id="email-signup" name="email" required placeholder="Email address" autocomplete="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
     <button class="button button-primary" type="submit">Subscribe</button>
 </form>
 <div class="mt-base hidden" id="signup-form-message" aria-live="polite"></div>
