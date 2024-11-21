@@ -149,11 +149,7 @@ muted: true
         </div>
         <div>
           <h3>Step 1: Bike setup</h3>
-          <video src="{{ videoSrc }}"
-          {% if autoplay %}autoplay{% endif %}
-          {% if loop %}loop{% endif %}
-          {% if disablePictureInPicture %}disablepictureinpicture{% endif %}
-          {% if muted %}muted{% endif %}></video>
+          <video src="{{ videoSrc }}" {% if autoplay %}autoplay{% endif %} {% if loop %}loop{% endif %} {% if disablePictureInPicture %}disablepictureinpicture{% endif %} {% if muted %}muted{% endif %}></video>
           <ol>
             <li>Place your bike along an inside corner of a room with the rear wheel touching one wall and the bike positioned parallel with the adjacent wall.</li>
             <li>The front wheel should be pointing straight ahead.</li>
@@ -260,7 +256,7 @@ muted: true
       <summary>Can I get the frame and fork custom painted?</summary>
       <div>
         <p>
-          Yes you can. <a href="/contact">Contact me</a> for pricing and
+          Yes you can. <a href="/contact/">Contact me</a> for pricing and
           turnaround time.
         </p>
       </div>
@@ -353,7 +349,7 @@ muted: true
           with its tapered steerer. I think a large head tube and a skinny
           steel fork clash. But I'm happy to make you a bike similar to the
           Whippet with a skinny head tube and a matching steel fork. See the
-          <a href="/bikes/custom">custom option</a>.
+          <a href="/bikes/custom/">custom option</a>.
         </p>
       </div>
     </details>
@@ -365,7 +361,7 @@ muted: true
           externally along the down tube with a port in the seat tube for
           running an optional dropper post. If you want a bike with full
           internal lines, I'm happy to make you a
-          <a href="/bikes/custom">custom bike</a> instead.
+          <a href="/bikes/custom/">custom bike</a> instead.
         </p>
       </div>
     </details>
