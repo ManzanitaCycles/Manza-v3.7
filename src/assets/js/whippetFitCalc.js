@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
         8: { reach: 436, stack: 671 }
     };
     const stemAngles = [-17, -7, -6, 0, 6, 7, 17];
-    const stemLengths = [50, 60, 70, 80, 90];
+    const stemLengths = [50, 60, 70, 80];
     const spacerStackOptions = [0, 2.5, 5, 7.5, 10, 12.5, 15, 17.5, 20];
 
     // Event listener for form submission
