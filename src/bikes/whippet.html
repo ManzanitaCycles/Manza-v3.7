@@ -1,8 +1,8 @@
 ---
 title: Whippet
-featuredImage: 1693d2f8-88a4-4877-a5d5-5073329e9150
+featuredImage: d7495b2c-949a-48ed-95a0-6bd11b3a1c70
 alt: Whippet gravel bike
-metaDesc: A fast and comfortable gravel bike that's easy to love.
+metaDesc: A fast and comfortable steel gravel bike that's easy to love.
 buildType: Stock
 videoSrc: "/assets/img/bike-to-corner.mp4"
 autoplay: true
@@ -16,12 +16,16 @@ muted: true
     <p class="slub">{{ whippet.subhead }}</p>
     <h1 class="fs-huge huge-ital">{{ whippet.name }}</h1>
   </div>
-  <img class="mt-xl" srcset="/assets/img/whippet/whippet-gravel-bike-xs.webp 685w, /assets/img/whippet/whippet-gravel-bike-sm.webp 800w, /assets/img/whippet/whippet-gravel-bike-md.webp 1200w, /assets/img/whippet/whippet-gravel-bike-lg.webp 1800w, /assets/img/whippet/whippet-gravel-bike-xl.webp 2400w" src="/assets/img/whippet/whippet-gravel-bike-xl.jpg" alt="The Whippet gravel bike is fast and comfortable" width="1200" height="800" decoding="async">
+  {% img "d7495b2c-949a-48ed-95a0-6bd11b3a1c70", "Ollie Cleveland of Dark Matter Finishing applies a clear coat over a Manzanita frame.", "mt-xl" %}
 </section>
 <!-- Slogan -->
 <section class="mt-xl">
   <h2 class="h1 center">{{ whippet.slogan }}</h2>
-  <p class="prose prose-center mt-base">The Whippet is your private jet. It's designed to float over gravel roads at maximum speed while in maximum comfort. The low air pressure you can run in the 29x2.25 tires lowers the rolling resistance while improving traction and reducing the vibrations that sap your energy. Custom UDH-compatible dropouts and convenient external routing make setup and maintenance super simple.</p>
+  <div class="prose prose-center mt-base stack">
+    <p class="h3 mt-lg">The Whippet is your <strong>private jet</strong> for gravel roads.</p>
+    <p>Designed to glide effortlessly over rough terrain, it delivers maximum speed with unmatched comfort. The large tires and low tire pressures reduce rolling resistance, enhance traction, and minimize energy-draining vibrations. Custom UDH-compatible dropouts and convenient external cable routing ensure straightforward setup and hassle-free maintenance.</p>
+  </div>
+
 </section>
 <!-- Shopping -->
 <section class="mt-xl">
@@ -34,7 +38,7 @@ muted: true
         <li>Seido MGV carbon fork</li>
         <li>Cane Creek 40 headset</li>
       </ul>
-      <p class="mt-lg"><a class="button button-primary" href="{{ whippet.baseDeposit }}">Place deposit</a></p>
+      <!-- <p class="mt-lg"><a class="button button-primary" href="{{ whippet.baseDeposit }}">Place deposit</a></p> -->
     </div>
     <div class="price-card price-card-stack">
       <h3>GRX build</h3>
@@ -43,9 +47,9 @@ muted: true
         <li>Whippet frame</li>
         <li>Seido MGV carbon fork</li>
         <li>Cane Creek 40 headset</li>
-        <li>Grx build kit</li>
+        <li>GRX build kit</li>
       </ul>
-      <p class="mt-lg"><a class="button button-primary" href="{{ whippet.buildDeposit }}">Place deposit</a></p>
+      <!-- <p class="mt-lg"><a class="button button-primary" href="{{ whippet.buildDeposit }}">Place deposit</a></p> -->
     </div>
     <div class="price-card price-card-stack">
       <h3>Custom build</h3>
@@ -56,7 +60,7 @@ muted: true
         <li>Headset of your choice</li>
         <li>Custom build kit</li>
       </ul>
-      <p class="mt-lg"><a class="button button-primary" href="{{ whippet.buildDeposit }}">Place deposit</a></p>
+      <!-- <p class="mt-lg"><a class="button button-primary" href="{{ whippet.buildDeposit }}">Place deposit</a></p> -->
     </div>
   </div>
   <details class="mt-xl border-block details-solo">
@@ -66,7 +70,7 @@ muted: true
 </section>
 <!-- Best gravel tires-->
 <section class="mt-xl sidebar sidebar-left divider">
-  {% img "14839a8a-10b4-450c-9fc0-b45ce84ddfc5", "The Whippet frame can clear a 58mm-wide tire." %}
+  {% img "d291772e-32ef-4b97-bbad-4cb43337f962", "The Whippet frame can clear a 57mm-wide tire." %}
   <div>
     <h2>The best gravel tires are mountain bike tires</h2>
     <p class="mt-base">
@@ -78,7 +82,7 @@ muted: true
 </section>
 <!-- Futureproof dropouts-->
 <section class="mt-xl sidebar">
-  {% img "f5aa3521-0956-40b9-ad29-28f2695a248b", "CNC machined UDH dropout insert" %}
+  {% img "d5698968-19dc-4b10-94ba-2281315c64dd", "CNC machined UDH dropout insert" %}
   <div>
     <h2>Future-proof dropouts</h2>
     <p class="mt-base">
@@ -91,7 +95,7 @@ muted: true
 
 <!-- Easy to love-->
 <section class="mt-xl sidebar sidebar-left">
-  {% img "ff273bb7-d725-4cbc-89e9-e9461a74f0e2", "Ollie Cleveland of Dark Matter Finishing applies a clear coat over a Manzanita frame." %}
+  {% img "033e1cb1-3da2-442d-ada7-7914b0522c03", "3d-printed housing guides that require no zip ties make maintenance a breeze." %}
   <div>
     <h2>Easy to love</h2>
     <p class="mt-base">
@@ -119,17 +123,27 @@ muted: true
 <!-- Geometry section-->
 <section class="mt-xl divider">
   <h2 class="h1">Geometry</h2>
+  <div class="prose mt-base stack-all">
+    <p>The Whippet comes in 8 frame sizes to cover a wide range of rider heights. Please use the <strong>Frame Fit Calculator</strong> below to help determine the best frame size for you.</p>
+    <h3>Design highlights</h3>
+    <ul>
+      <li>The extended frame reach is optimized for stems ranging from 50mm to 90mm. A shorter stem returns some steering responsiveness when paired with larger tires.</li>
+      <li>A compact seat tube promotes additional bump-absorbing flex from the exposed seat post.</li>
+      <li>The longer head tube reduces the need for excessive headset spacers, making it easier to achieve the ideal handlebar height.</li>
+      <li>A slack—but not overly slack—head tube angle, paired with a generous fork offset, provides confident control, even with narrow handlebars.</li>
+      <li>Chainstay length increases with frame size, improving weight distribution for better traction.</li>
+    </ul>
+  </div>
   {% include "partials/_whippetGeo.html" %}
   <p class="mt-base"><small>
-      *Angle determined at average saddle height<br />
-      **Center to top<br />
-      ***Measured with 57mm (2.25") tire
+      *Center to top<br />
+      **Measured with 57mm (2.25") tire
     </small></p>
 </section>
 <!-- Frame fit calc-->
 <section class="mt-xl divider">
   <div>
-    <h2 class="h1">Frame fit calculator</h2>
+    <h2 class="h1">Frame Fit Calculator</h2>
     <p class="mt-base prose">
       Measure your current bike, and the calculator will not only recommend the best <strong>Whippet frame size</strong> for you but also recommend the optimal <strong>stem length</strong>, <strong>stem angle</strong>, and <strong>headset spacer stack</strong>. It's the easiest and most accurate way to guarantee the perfect fit.
     </p>
@@ -153,7 +167,7 @@ muted: true
           <ol>
             <li>Place your bike along an inside corner of a room with the rear wheel touching one wall and the bike positioned parallel with the adjacent wall.</li>
             <li>The front wheel should be pointing straight ahead.</li>
-            <li>The handlebar can rest on the wall to keep the bike upright.</li>
+            <li>The handlebar can rest on the adjacent wall to keep the bike upright.</li>
           </ol>
         </div>
         <div>
@@ -187,6 +201,97 @@ muted: true
     </div>
     {% include "partials/_whippetFitCalc.html" %}
   </div>
+  <!-- Tubing section -->
+  <section class="mt-xl divider">
+    <h2 class="h1">Tube selection</h2>
+    <div class="prose mt-base stack">
+      <p>Whippet frames feature a mix of Columbus and Velospec steel tubing, along with 4130 tubing sourced domestically. Each tube is carefully selected to optimize the balance of durability, weight, and ride quality.</p>
+    </div>
+    <div class="prose mt-lg">
+      <dl>
+        <dt>Head tube</dt>
+        <dd>Columbus Spirit 46/36 tapered or 46 straight for sizes M1 and M2</dd>
+        <dt>Top tube</dt>
+        <dd>Columbus SL 25.4 8/5/8 for size M1, Velospec Pro 28.6 8/5/8 for sizes M2-M6, Velospec Pro 28.6 9/6/9 for sizes M7 and M8</dd>
+        <dt>Down tube</dt>
+        <dd>Velospec Pro 31.8 8/5/8 for sizes M1-M3, Velospec Pro 34.9 8/5/8 for sizes M4-M6, Velospec Pro 34.9 9/6/9 for sizes M7 and M8</dd>
+        <dt>Seat tube</dt>
+        <dd>Velospec 28.6 1.2/6/9 externally butted</dd>
+        <dt>Bottom bracket shell</dt>
+        <dd>Paragon Machine Works 68mm threaded BSA with internal relief for weight savings</dd>
+        <dt>Chain stays</dt>
+        <dd>4130 19x0.9 straight gauge custom bent in house</dd>
+        <dt>Seat stays</dt>
+        <dd>4130 12.7x0.9 straight gauge or 14x0.9 for sizes M7 and M8 custom bent in house</dd>
+      </dl>
+    </div>
+  </section>
+
+  <!-- Dropouts section -->
+  <section class="mt-xl divider">
+    <h2 class="h1">Custom dropouts</h2>
+    {% img "28529bda-3668-4b17-b65b-c3f336d9452c", "The Whippet dropouts use a combination of laser cut steel plates with bolt-on CNC-machined aluminum inserts.", "mt-lg" %}
+    <div class="prose mt-lg stack">
+      <p>Designing the Whippet dropouts was a true passion project. My goal was to create a dropout that not only stood out as unique to the Whippet but also ensured perfect alignment for the flat mount brake, worked seamlessly with SRAM's Universal Derailleur Hanger (UDH), and was straightforward for powder coaters to finish. After nearly a year of design and prototyping, I'm thrilled with the final result.</p>
+      <p>The Whippet dropouts feature a combination of laser-cut steel plates and bolt-on, CNC-machined, hard-anodized aluminum inserts. The inserts nest into alignment holes cut into the steel plates, acting as shear keys to reduce stress on the bolts that secure the two parts together.</p>
+      <p>This design delivers precise alignment for SRAM's UDH on the driveside and the 140/160 flat mount brake on the non-driveside. Proper alignment of the flat mount brake is critical to prevent annoying rotor rub and brake squeal.</p>
+      <p>To add a touch of personality, one of the stainless steel washers is laser cut with the Manzanita logo.</p>
+    </div>
+    <div class="grid-300 mt-lg">
+      {% img "5e0f2592-b824-4b11-a971-dd2a6b302882", "The Whippet dropouts installed in a painted frame" %}
+      {% img "7b726c47-28b2-4c63-9dbf-ee6286b2f3b0", "The stainless steel washer with the Manzanita logo" %}
+    </div>
+
+  </section>
+
+  <!-- Colors section -->
+  <section class="mt-xl divider">
+    <h2 class="h1">Color options</h2>
+    <div class="prose mt-base stack">
+      <p>Whippet frames are powder-coated six miles from Manzanita World Headquarters, and the 3M vinyl decals are made by a sign shop conveniently located down the street from the powder coater. Whenever possible, I prioritize working with local businesses, not just for convenience, but because it means faster turnaround times, better quality oversight, reduced environmental impact of transportation, and most importantly, it supports the local economy.</p>
+      <p>The frame is available in two color schemes: <strong>Manzanita red with light blue graphics and white with black graphics.</strong></p>
+      <p>For an extra $100, you can opt for a custom color scheme. Once you've placed your deposit, I can help you dial in your custom colors.</p>
+      <p>By default the Seido carbon fork comes unpainted. If you're looking to add some color to both the frame and the fork, please contact me for a quote and estimated turnaround time.</p>
+    </div>
+  </section>
+
+  <!-- Guides section -->
+  <section class="mt-xl divider">
+    <h2 class="h1">Custom guides</h2>
+    <div class="prose mt-base stack">
+      <p>Housing guide design is often treated as an afterthought. Bike frames typically go one of two ways: full internal routing, which can be a maintenance nightmare, or oversized, unattractive external guides held in place by cheap zip ties.</p>
+      <p>For the Whippet, I set out to elevate the function and form of the humble housing guide.</p>
+      <h3>Smaller bosses</h3>
+      <p>The first step was to create a new attachment point, appropriately sized for the task. Typically, M5 bolts are used to secure housing guides to a frame. But for lightweight housing, an M5 bolt is overkill. It offers far more strength than needed. Look at most suspension forks. Their housing guides are secured with M3 bolts. That's the size I chose for the Whippet's housing guide bosses. A local machine shop produced a small batch of these redesigned bosses.</p>
+      <p>The smaller M3 bosses come with another benefit: they're nearly invisible. If you plan to run a wireless drivetrain, your Whippet won't need housing guides on the driveside chainstay. Thanks to the compact size of the M3 bosses, they almost disappear, preserving the sleek, minimalist aesthetic that wireless setups are known for.</p>
+      <h3>Friction guides</h3>
+      <p>Next, I designed bolt-on guides that eliminate the need for zip ties or fussy plastic clips. Inspired by the housing guide on the RockShox SID SL fork, I created the friction guide. These guides are 3D-printed to snugly fit either 4mm derailleur housing or 5mm brake housing along the chainstays. The housing snaps securely into the groove, held in place by the guide's precise fit. No zip ties, no fuss.</p>
+      <h3>Frame protection guide</h3>
+      {% img "9974b527-8b80-4c37-958f-a19d7120f97d", "Frame protection guide under the down tube." %}
+      <p>Finally, I addressed the challenge of routing housing along the downtube. When riding off-road, the front tire flings rocks and debris toward the downtube, especially near the bottom bracket shell. This is an ideal spot to add frame protection while also securing housing.</p>
+      <p>The bolt-on frame protection guide combines both functions. It shields the frame from debris and protects the housing, all in one streamlined design. And for added utility, the guide is compatible with standard M5 bolts, allowing you to attach a water bottle cage over it.</p>
+      <h3>Dropper post guide</h3>
+      {% img "c3be5ea9-25bc-4f2c-8fba-c0c6ce98e841", "Frame protection guide under the down tube." %}
+      <p>On the back of the seat tube, you'll find a discreet, stainless 3d-printed guide that accepts 4mm housing for running a dropper post.</p>
+    </div>
+  </section>
+
+  <!-- Seido Fork section -->
+  <section class="mt-xl divider">
+    <h2 class="h1">Seido MGV fork</h2>
+    {% img "3a56cfde-dbc7-4b41-aab4-34b78a764cf8", "Seido MGV carbon fork", "mt-lg" %}
+    <div class="prose mt-base stack">
+      <p>When searching for the right fork to pair with the Whippet frame, I wanted something that was lightweight, that had clearance for 700x57 tires, and that had mounts for bikepacking trips.</p>
+      <p>Once I laid my eyes on the specs of the Seido MGV fork it was a no-brainer to use it:</p>
+      <ul>
+        <li>Can run 160mm or 180mm rotors</li>
+        <li>Can mount a lowrider rack for loads up to 20kg (44lbs)</li>
+        <li>Can mount 3-pack cage for loads up to 4.5kg (10lbs)</li>
+        <li>Internal routing for dynamo lighting</li>
+        <li>Ample tire clearance without being too visually stout like MTB forks</li>
+      </ul>
+    </div>
+  </section>
 
 </section>
 <!-- FAQ -->
@@ -205,6 +310,8 @@ muted: true
           <dd>UDH / Sram Transmission</dd>
           <dt>Chainline</dt>
           <dd>47 to 49</dd>
+          <dt>Min crank Q-factor</dt>
+          <dd>150</dd>
           <dt>Max chainring</dt>
           <dd>42</dd>
           <dt>Brake type</dt>
@@ -231,25 +338,10 @@ muted: true
           <li>Sram Universal Derailleur Hanger</li>
           <li>Wolftooth seat collar</li>
           <li>Cane Creek 40 headset</li>
-          <li>Clear chainstay protection</li>
+          <li>Chainstay protection</li>
           <li>3d-printed friction housing guides</li>
-          <li>3d-printed down tube protector</li>
+          <li>3d-printed frame protection guide</li>
         </ul>
-      </div>
-    </details>
-    <details name="faq">
-      <summary>How fast can I get my hands on a Whippet?</summary>
-      <div>
-        <p>My goal is to get you a frameset within 12 weeks of your deposit. Full builds may take longer depending on parts availability.</p>
-      </div>
-    </details>
-    <details name="faq">
-      <summary>What are my color options?</summary>
-      <div>
-        <ol>
-          <li>White frame with black decals</li>
-          <li>Manzanita red frame with light green decals</li>
-        </ol>
       </div>
     </details>
     <details name="faq">
@@ -280,30 +372,32 @@ muted: true
     <details name="faq">
       <summary>Can I run a front derailleur?</summary>
       <div>
-        <p>
-          No. The bike frame is optimized for 1x drivetrains. The performance
-          and comfort benefits of wider tires trumps the benefits of 2x
-          drivetrains.
-        </p>
+        <p>Sizes M1, M2, and M8 have straight seat tubes, so those can technically run a front derailleur. But the Whippet isn't designed with front derailleurs in mind. If you want to try to make it work, go for it, but it's on you to figure it out.</p>
       </div>
     </details>
     <details name="faq">
       <summary>Can I run 650b wheels?</summary>
       <div>
         <p>
-          The two smallest sizes are designed around 650b wheels. All other
+          The three smallest frame sizes are designed around 650b wheels. All other
           sizes are designed around 700c wheels. If you run 650b wheels on the
           larger frame sizes your bottom bracket will drop around 19mm. That
-          may cause frequent pedal strikes riding off road. Therefore, it's
+          may cause frequent pedal strikes riding off road or when trying to pedal when cornering. Therefore, it's
           not recommended.
         </p>
+      </div>
+    </details>
+    <details name="faq">
+      <summary>What's the narrowest tire I can run?</summary>
+      <div>
+        <p>For sizes M1 to M3 that use 650b wheels, it's recommended to go no smaller than 42mm. For the larger sizes, it's recommended to go no smaller than 40mm. Remember though that your pedals will be closer to the ground running the minimum recommended tire sizes. Be more thoughtful when pedaling in corners or riding singletrack.</p>
       </div>
     </details>
     <details name="faq">
       <summary>What's the max weight I can carry on a rear rack?</summary>
       <div>
         <p>
-          The frame isn't designed for carrying heavy rear loads. I'd
+          The frame will get wiggly if you try to add too much weight on a rear rack. I'd
           recommend carrying no more than 8lbs, including the weight of the
           rack.
         </p>
@@ -322,20 +416,18 @@ muted: true
     <details name="faq">
       <summary>How many headset spacers can I use?</summary>
       <div>
-        <p>
-          Seido limits the total headset stack below the stem to 35mm from the top of the upper bearing. Most headset top caps are around 15-16mm, so you have 19-20mm of space for additional spacers. Additionally, you'll need to place a 5mm spacer above the stem.
-        </p>
+        <p>Seido limits the total headset spacer stack below the stem to 35mm from the top of the upper bearing. The top cap of the headset that comes with the frame is 16mm tall. So you have 19mm of room for additional spacers.</p>
+        <p>Additionally, Seido requires that you leave 5mm of steerer tube above the stem. Your Whippet will come with Seido's installation instructions. Please refer to those when cutting your steerer tube.</p>
+        <p>Frame size M8 is limited to a 10mm spacer stack because the frame maxes out the fork's steerer tube length. This limitation is factored into the Frame Fit Calculator above.</p>
       </div>
     </details>
     <details name="faq">
       <summary>Can I run a suspension fork on this frame?</summary>
       <div>
-        <p>
-          Most gravel suspension forks with 30mm-40mm of travel will work. The
-          taller fork length will likely slacken the seat tube and head tube
+        <p>Most gravel suspension forks with 30mm-40mm of travel will work. The
+          taller fork length will slacken the seat tube and head tube
           angles a bit, but not enough to dramatically change how the bike
-          handles.
-        </p>
+          handles.</p>
       </div>
     </details>
     <details name="faq">
@@ -359,7 +451,7 @@ muted: true
         <p>
           The Whippet is designed to be easy to maintain. All lines run
           externally along the down tube with a port in the seat tube for
-          running an optional dropper post. If you want a bike with full
+          running a dropper post. If you want a bike with full
           internal lines, I'm happy to make you a
           <a href="/bikes/custom/">custom bike</a> instead.
         </p>

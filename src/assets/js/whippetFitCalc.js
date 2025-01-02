@@ -15,8 +15,8 @@ document.addEventListener("DOMContentLoaded", function () {
         8: { reach: 436, stack: 671 }
     };
     const stemAngles = [-17, -7, -6, 0, 6, 7, 17];
-    const stemLengths = [50, 60, 70, 80];
-    const spacerStackOptions = [0, 2.5, 5, 7.5, 10, 12.5, 15, 17.5, 20];
+    const stemLengths = [50, 60, 70, 80, 90];
+    const spacerStackOptions = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19];
 
     // Event listener for form submission
     form.addEventListener("submit", function (event) {
@@ -103,9 +103,13 @@ document.addEventListener("DOMContentLoaded", function () {
         let closestNegStemDiff = Infinity;
 
         for (let frameSize = 1; frameSize <= 8; frameSize++) {
+            const maxSpacerStack = frameSize === 8 ? 10 : Math.max(...spacerStackOptions); // Limit to 10mm for M8
+
             for (let stemAngle of stemAngles) {
                 for (let stemLength of stemLengths) {
                     for (let spacerStack of spacerStackOptions) {
+                        if (spacerStack > maxSpacerStack) continue; // Skip if spacerStack exceeds the limit
+
                         const { handlebarStack, handlebarReach } = calculateHandlebarGeometry(frameSize, stemAngle, stemLength, spacerStack);
                         const totalDiff = Math.abs(handlebarStack - userStack) + Math.abs(handlebarReach - userReach);
 
@@ -154,7 +158,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function calculateHandlebarGeometry(frameSize, stemAngle, stemLength, spacerStack) {
         const frameData = frameSizeData[frameSize];
         const headTubeAngle = 70.5;
-        const headsetStack = 15;
+        const headsetStack = 16;
         const stemStackHeight = 40;
 
         const handlebarStack = Math.round(
