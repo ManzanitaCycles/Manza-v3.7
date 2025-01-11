@@ -422,10 +422,6 @@ label {
 
 /* Utilities for adding margins */
 
-.mb-0 {
-    margin-bottom: 0;
-}
-
 .mb-xl {
     margin-bottom: var(--s-xl);
 }
