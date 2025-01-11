@@ -400,7 +400,7 @@ textarea {
 }
 
 /* Make inputs no larger than 35ch wide */
-input {
+input:not([type="checkbox"]) {
     width: min(35ch, 100%);
 }
 
@@ -421,6 +421,11 @@ label {
 }
 
 /* Utilities for adding margins */
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
 .mb-xl {
     margin-bottom: var(--s-xl);
 }
