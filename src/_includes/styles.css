@@ -391,6 +391,13 @@ h3,
     display: none;
 }
 
+iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    /* Maintains 16:9 aspect ratio */
+    border: 0;
+}
+
 /* Style form elements */
 input,
 textarea {
