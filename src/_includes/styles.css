@@ -459,6 +459,18 @@ label {
     font-size: var(--fs-p);
 }
 
+.download-list ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.download-list ul li::before {
+    content: '\2913';
+    color: var(--clr-gray);
+    margin-right: .5em;
+    display: inline-block;
+}
+
 .price-card ul {
     list-style: none;
     padding-left: 0;
