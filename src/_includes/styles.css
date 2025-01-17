@@ -228,6 +228,11 @@ body {
     color: var(--clr-black) !important;
 }
 
+.button-inactive {
+    background-color: var(--clr-light-gray);
+    color: var(--clr-black);
+}
+
 /* Make the button shrink a little when pressed */
 .button:active {
     transform: scale(99%);
