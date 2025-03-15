@@ -73,8 +73,8 @@ document.addEventListener("DOMContentLoaded", function () {
     function validateHandlebarStack() {
         const userStack = parseFloat(document.getElementById("user_handlebar_stack").value.trim());
         const errorMessage = document.getElementById("user_handlebar_stack_error");
-        if (isNaN(userStack) || userStack < 540 || userStack > 750) {
-            errorMessage.textContent = "Please enter a number between 540 and 750.";
+        if (isNaN(userStack) || userStack < 540 || userStack > 775) {
+            errorMessage.textContent = "Please enter a number between 540 and 775.";
             return false;
         }
         errorMessage.textContent = "";
